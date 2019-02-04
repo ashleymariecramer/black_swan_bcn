@@ -1,0 +1,679 @@
+/*-----------------------------------------------------------
+B
+-----------------------------------------------------------*/
+/* Colours used:
+#FFFFFF White
+#EBECED Light grey
+#A2AAB0 Mid grey
+#3E3E3B Dark grey
+#9FBAA6 Green accent colour
+*/
+
+#preloader {
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:99999999999;
+    width:100%;
+    height:100%;
+    overflow:visible;
+    background: #fff url(../images/AjaxLoader.gif) no-repeat center center;
+}
+
+/*-- General Styles --*/
+body{
+	font-family: 'Lato';
+	overflow-x: hidden;
+	color: #ffffff;
+	position: relative;
+}
+
+
+h1{
+	font-family: 'Poiret One';
+}
+/*-- Section Heading --*/
+.section-heading{
+	color: #ffffff;
+}
+
+.section-heading h3{
+	font-weight: 100;
+	letter-spacing: 3px;
+}
+
+.section-heading hr{
+	margin-top: 30px;
+	margin-bottom: 40px;
+	border-color: #ffffff;
+}
+
+
+strong{
+	font-weight: 900;
+}
+
+hr {
+	width: 80px;
+}
+
+hr.icon:after {
+    content: "\f123";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .30em;
+    font-family: 'FontAwesome';
+    font-size: 1.5em;
+    color: #ffffff;
+    background-color: #9FBAA6; /* Green accent colour*/
+}
+
+
+p{
+	line-height: 24px;
+	font-weight: 300;
+}
+
+blockquote{
+	margin: 0;
+	padding: 0;
+	border-left: none;
+}
+
+.vertical-align{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+::selection {
+	background: #9FBAA6; /*green accent color*/
+	color: #fff;
+}
+::-moz-selection {
+	background: #9FBAA6; /*green accent color*/
+	color: #fff;
+}
+
+/* Anchors */
+a,
+a:focus{
+	color: #9FBAA6; /*green accent color*/
+}
+
+a:hover{
+	color: #EBECED; /*light grey*/
+	text-decoration: none;
+}
+
+/*-----------------------------------------------------------
+0. Header
+-----------------------------------------------------------*/
+
+/* Side Menu ???? does this actually appear?????*/
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #fff;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav a {
+    display: block;
+    text-decoration: none;
+    font-weight: 300;
+    color: #111111;
+}
+
+.sidebar-nav a:hover {
+    display: block;
+    color: #873fb5;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 55px;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    background-color: #fff;
+}
+
+#sidebar-wrapper.active {
+    left: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* End Side Menu */
+
+#home{
+	background: #A2AAB0; /* Light grey */
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 160px;
+	color: #fff;
+}
+
+.logo{ /* company name between parallel lines*/
+	font-weight: 100;
+	font-size: 46px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	display: inline-block;
+	margin-top: -25px;
+}
+
+#home h3{
+	font-weight: 300;
+	font-size: 20px;
+	margin: 0;
+	font-family: "Poiret One";
+}
+
+#home .learn-more{
+	color: #fff;
+	position: absolute;
+	font-size: 20px;
+}
+
+.learn-more .fa{
+	position: absolute;
+}
+
+.learn-more .second-arrow{
+	top: 4px;
+}
+
+.learn-more .third-arrow{
+	top: 8px;
+}
+
+/*-----------------------------------------------------------
+1. Carousel
+-----------------------------------------------------------*/
+#MyCarousel{
+
+}
+
+#intro{
+	background: #fff fixed;
+	height: 600px;
+
+}
+
+.carousel{
+    background: #fff;
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+    max-height: 600px;
+}
+
+/*-----------------------------------------------------------
+1. About
+-----------------------------------------------------------*/
+#about{
+	background: url(../images/about.png) fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 520px;
+	color: #3E3E3B; /*Dark grey */
+	font-weight: 400;
+}
+
+#about h1{
+	font-weight: 400;
+	letter-spacing: 3px;
+}
+
+
+#about h4{
+	font-weight: 400;
+	padding: 0 10%;
+}
+
+
+/*-----------------------------------------------------------
+2. Services
+-----------------------------------------------------------*/
+#services{
+	background-color: white;
+	height: 520px;
+	color: #3E3E3B; /*Dark grey */
+	font-weight: 400;
+}
+
+#services h1{
+	font-weight: 400;
+	letter-spacing: 3px;
+	color: #3E3E3B; /* Dark Grey */
+}
+
+#services h3{
+	color: #3E3E3B; /* Dark Grey */
+	font-weight: 600;
+	margin-left: 10px;
+}
+
+
+
+.symbol{ /* for images for services and activities*/
+	float: left;
+	max-height: 60px;
+	padding: 10px;
+}
+
+/*-----------------------------------------------------------
+3. Ratings
+-----------------------------------------------------------*/
+#ratings{
+	background: url(../images/ratings.png) fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	color: #fff;
+}
+
+#ratings .content h1{
+	font-size: 48px;
+}
+
+#ratings .content h3{
+	font-weight: 300;
+	margin-top: 0px;
+}
+
+#ratings p{
+	text-align: right;
+	font-size: 16px;
+	color: #3E3E3B;
+	margin-right: 20px;
+}
+
+#skills .content p{
+	margin: 40px 0;
+}
+
+#skills .button:last-child{
+	margin-left: 20px;
+}
+
+.progress-bars h5{
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.progress {
+	height: 30px;
+	margin-bottom: 30px;
+	opacity: .78; /* layer alpha */
+	background-color: #3E3E3B; /* layer fill content */
+	border-radius: 4px;
+	box-shadow: none;
+}
+.progress-bar {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#258dc8+0,783a93+0,96425a+100 */
+ background-color:#9FBAA6;
+ filter:progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#9FBAA6, endColorstr=#EBECED);
+ background-image:-moz-linear-gradient(left, #9FBAA6 33%, #EBECED 100%);
+ background-image:-webkit-linear-gradient(left, #9FBAA6 33%, #EBECED 100%);
+ background-image:-ms-linear-gradient(left, #9FBAA6 33%, #EBECED 100%);
+ background-image:linear-gradient(left, #9FBAA6 33%, #EBECED 100%);
+ background-image:-o-linear-gradient(left, #9FBAA6 33%, #EBECED 100%);
+ background-image:-webkit-gradient(linear, left bottom, right bottom, color-stop(33%,#9FBAA6), color-stop(100%,#EBECED));
+}
+
+#ratings h3{
+	padding-bottom: 5px;
+	padding-top: 30px;
+	font-weight: 400;
+}
+
+.button{
+	color: #fff;
+	font-size: 16px;
+/*	text-transform: lowercase;*/
+	border-bottom: 3px solid #fff;
+	border-radius: 2px;
+	padding-bottom: 5px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.button:hover{
+	border-color: #9FBAA6;
+}
+
+
+/*-----------------------------------------------------------
+4. Portfolio
+-----------------------------------------------------------*/
+#portfolio .col-md-4{
+	padding: 0px;
+}
+
+.portfolio-thumb,
+.portfolio-overlay{
+	max-width: 390px;
+	height: 270px;
+}
+
+#portfolio .portfolio-thumb img{
+	height: 100%;
+	width: 100%;
+}
+
+#portfolio .portfolio-thumb{
+	overflow: hidden;
+	padding: 0;
+	margin: 0 auto;
+}
+
+#portfolio .portfolio-thumb .portfolio-overlay{
+	text-align: center;
+	background: rgba(135,63,181,.6);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	padding: 20px 10px 20px 20px;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-transition: all 0.2s ease-in-out;
+	        transition: all 0.2s ease-in-out;
+}
+
+#portfolio .portfolio-thumb:hover .portfolio-overlay{
+	cursor: pointer;
+	opacity: 1;
+}
+
+#portfolio .portfolio-thumb .portfolio-overlay h2{
+	color: #fff;
+	font-weight: 300;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	display: inline-block;
+	padding: 5px 10px 10px 10px;
+}
+
+#portfolio .portfolio-thumb .portfolio-overlay a{
+	color: #fff;
+	font-size: 24px;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+
+/*-----------------------------------------------------------
+5. Stats
+-----------------------------------------------------------*/
+.stat{
+	color: #3E3E3B; /* Dark grey */
+	height: 230px;
+}
+
+.stat i{
+	font-size: 48px;
+}
+
+.stat h4{
+	font-weight: 300;
+}
+
+.excellence{
+	background: url(../images/stats1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.staff{
+	background: url(../images/stats3.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.location{
+	background: url(../images/stats2.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.solo{
+	background: url(../images/stats4.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+
+/*-----------------------------------------------------------
+6. Reviews
+-----------------------------------------------------------*/
+#reviews{
+	background: url(../images/reviews.png) fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 580px;
+	color: #3E3E3B; /* Dark grey */
+	position: relative;
+	padding-top: 30px;
+
+}
+
+#reviews p{
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.owl-carousel h4{
+	font-weight: 300;
+}
+
+.owl-carousel cite{
+	font-style: normal;
+	font-size: 24px;
+	font-weight: 900;
+}
+
+.owl-carousel img{
+	width: 80px;
+	height: 80px;
+	margin: 20px 0;
+}
+
+.owl-carousel p{
+	font-weight: 300;
+}
+
+/*-----------------------------------------------------------
+7. Contact Form
+-----------------------------------------------------------*/
+/*#contact{
+	background: #fff fixed;
+	height: 400px;*/
+
+.form-control {
+	height: 45px;
+	padding: 5px;
+	font-size: 15px;
+	color: #8c8c8c;
+	background-color: #EBECED; /* Light grey */
+	border: 1px solid #A2AAB0; /* Mid grey */
+	box-shadow: none;
+	font-weight: 300;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.form-control:focus {
+	box-shadow: none;
+	color: #3E3E3B; /* Dark grey */
+	border-color: #9FBAA6; /* Green */
+
+}
+
+.form-control::-moz-placeholder {
+	color: #9FBAA6; /* Green */
+	opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+	color: #9FBAA6; /* Green */
+}
+.form-control::-webkit-input-placeholder {
+	color: #9FBAA6; /* Green */
+}
+
+.form-control:focus::-moz-placeholder {
+	color: #9FBAA6; /* Green */
+	opacity: 1;
+}
+.form-control:focus:-ms-input-placeholder {
+	color: #9FBAA6; /* Green */
+}
+.form-control:focus::-webkit-input-placeholder {
+	color: #9FBAA6; /* Green */
+}
+
+
+/*-----------------------------------------------------------
+8. Footer
+-----------------------------------------------------------*/
+#footer{
+	background: #A2AAB0 fixed; /* Mid grey */
+	background-repeat: no-repeat;
+	background-position: bottom;
+	-webkit-background-size: cover;
+	background-size: cover;
+	color: #fff;
+	padding: 50px 0;
+}
+
+#footer .logo{
+	font-size: 47px;
+	padding: 0 20px 10px 20px;
+}
+
+#footer ul{
+	padding-left: 0;
+	display: block;
+	margin-top: 10px;
+}
+
+#footer ul li{
+	display: inline-block;
+}
+
+#footer ul a{
+	font-size: 30px;
+	color: #fff;
+	padding: 0 10px;
+}
+
+.copyrights{
+	background-color: rgba(0,0,0,.5);
+	text-align: center;
+	font-size: 12px;
+	padding: 5px 0;
+	width: 100%;
+	color: #fff;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+
+/*-----------------------------------------------------------
+9. Bootstrap Media Queries
+-----------------------------------------------------------*/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 970px) and (max-width: 1170px) {
+
+	.service-item i {
+		float: none;
+		border: none;
+		display: block;
+	}
+
+	.service-item{
+		text-align: center;
+	}
+
+	.service-title{
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+}
+
+@media (max-width: 750px) {
+
+	.progress-bars{
+		margin-top: 30px;
+	}
+
+	.google-map{
+		margin-top: 20px;
+	}
+
+}
